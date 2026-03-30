@@ -34,10 +34,7 @@ function CadastroModelos() {
   async function cadastrarModelo(e) {
     e.preventDefault();
 
-    if (quantidade > totalDisponivel) {
-      return alert("Sem linhas suficientes para esse modelo");
-    }
-
+  
     await fetch("/api/modelos", {
       method: "POST",
       headers: {
