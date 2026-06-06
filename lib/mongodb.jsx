@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI) {
-  throw new Error("Defina a MONGODB_URI no .env.local");
+  throw new Error("Erro no banco!");
 }
 
 let cached = global.mongoose;
